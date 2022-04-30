@@ -66,3 +66,10 @@ media
 # git log -> q
 
 # python manage.py runserver 0.0.0.0:8000
+
+# deploy to heroku
+# heroku login  
+# heroku buildpacks:set heroku/python
+# heroku buildpacks:add --index 1 heroku/nodejs
+# heroku git:remote -a aj-music
+# git push heroku main
