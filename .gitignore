@@ -43,6 +43,7 @@ media
 # `````
 # ~~~ Django ~~~
 # pip install django djangorestframework
+# pip install requests
 # django-admin startproject music_player
 # django-admin startapp api
 # python manage.py makemigrations (when database modified)
