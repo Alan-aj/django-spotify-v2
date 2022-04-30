@@ -1,0 +1,68 @@
+node_modules
+main.js*
+.env
+
+
+# Django #
+*.log
+*.pot
+*.pyc
+__pycache__
+db.sqlite3
+media
+
+# Backup files # 
+*.bak 
+.idea/
+
+
+# secure
+# ``````
+# - pip install python-decouple
+# - create .env file
+# - add all keys
+# - from decouple import config (add in settings)
+# - change to -> config('SECRET_KEY')
+
+# Git
+# ```
+# git rm -r --cached db.sqlite3
+# git commit -m "message" -m "detailed discription"
+# $ git restore --staged <file>
+
+# Development
+# ```````````
+# music_player\frontend> -> npm run dev
+# python manage.py runserver
+
+# npm
+# ````
+# npm i react-router-dom@5.2.0
+
+# Setup
+# `````
+# ~~~ Django ~~~
+# pip install django djangorestframework
+# django-admin startproject music_player
+# django-admin startapp api
+# python manage.py makemigrations (when database modified)
+# python manage.py migrate (to apply the migration)
+# django-admin startapp frontend
+# 
+# ~~~ React ~~~
+# npm init -y
+# npm i webpack webpack-cli --save-dev
+# npm i @babel/core babel-loader @babel/preset-env @babel/preset-react --save-dev
+# npm i react react-dom --save-dev
+# npm install @material-ui/core
+# npm install react-router-dom
+# npm install @material-ui/lab (to use alert)
+
+
+# activate
+# python manage.py runserver
+# npm run dev
+# git remote -v
+# git log -> q
+
+# python manage.py runserver 0.0.0.0:8000
