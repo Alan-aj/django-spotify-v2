@@ -74,3 +74,4 @@ media
 # heroku git:remote -a aj-music
 # git push heroku main
 # heroku config:set DISABLE_COLLECTSTATIC=1  
+# heroku logs --tail  
