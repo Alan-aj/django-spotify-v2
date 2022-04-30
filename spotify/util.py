@@ -2,7 +2,7 @@ from .models import SpotifyToken
 from django.utils import timezone
 from datetime import timedelta,datetime
 from requests import post, put, get
-from decouple import config
+import os
 
 BASE_URL = "https://api.spotify.com/v1/me/"
 
@@ -45,8 +45,8 @@ def refresh_spotify_token(session_id):
     response = post('https://accounts.spotify.com/api/token', data={
         'grand_type': 'refresh_token',
         'refresh_token': refresh_token,
-        'client_id': config('CLIENT_ID'),
-        'client_secret': config('CLIENT_SECRET')
+        'client_id': os.environ['CLIENT_ID'],
+        'client_secret': os.environ['CLIENT_SECRET']
     }).json()
 
     access_token = response.get('access_token')
