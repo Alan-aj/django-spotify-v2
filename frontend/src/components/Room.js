@@ -113,7 +113,7 @@ export default class Room extends Component {
           });
         } else if (resStatus == 500) {
           this.setState({
-            msg: "Server error, try to leave room and login again",
+            msg: "Server error, please wait or login again",
           });
         } else if (resStatus == 404) {
           this.setState({ msg: "Oops not found, try again" });
