@@ -109,7 +109,7 @@ export default class Room extends Component {
 
         if (resStatus == 204) {
           this.setState({
-            msg: "Oops, No spotify app found  —  Login to spotify",
+            msg: "Oops, No song found — Open spotify app",
           });
         } else if (resStatus == 500) {
           this.setState({
